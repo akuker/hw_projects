@@ -1,0 +1,103 @@
+(kicad_sch (version 20201015) (generator eeschema)
+
+  (page 1 3)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 200.8124 56.8452) (size 38.9636 11.2268)
+    (stroke (width 0.001) (type solid) (color 132 0 132 1))
+    (fill (color 0 0 255 1.0000))
+    (uuid dd09b3e0-597c-4f6d-aa94-26c459297424)
+    (property "Sheet name" "ADB_Ports" (id 0) (at 200.8124 56.2093 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "ADB_Ports.kicad_sch" (id 1) (at 200.8124 68.5809 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 200.3552 35.0012) (size 39.1668 11.2268)
+    (stroke (width 0.001) (type solid) (color 132 0 132 1))
+    (fill (color 0 0 255 1.0000))
+    (uuid a59fe0f1-9f48-44b7-aa6e-47b197a73ed7)
+    (property "Sheet name" "PS2_ports" (id 0) (at 200.3552 34.3653 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "PS2_Ports.kicad_sch" (id 1) (at 200.3552 46.7369 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/" (page ""))
+    (path "/dd09b3e0-597c-4f6d-aa94-26c459297424/" (page ""))
+  )
+
+  (symbol_instances
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/3ebabcc8-3049-4ebd-a4cc-288274b0771a"
+      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/469e6898-77f1-40bd-984b-1c2e3bee72f5"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/4f626b21-cf0d-4d08-b6c1-81490b6262f5"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/5eaa3bfe-4b2b-43f1-bbc5-ac830d58cda9"
+      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/7027d3f0-1e43-441d-9ef2-f350b9fa0db4"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/a5694936-006b-431e-9115-8409d93e204d"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/4c6b32c7-5345-419b-9687-8335ee04feac"
+      (reference "J?") (unit 1) (value "MD-60S") (footprint "CUI_MD-60S")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/f64893f8-d08f-4713-a64b-ca559809c6ac"
+      (reference "J?") (unit 1) (value "MD-60S") (footprint "CUI_MD-60S")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/01407d4a-4a1b-49f1-8162-2408a7a2ca01"
+      (reference "JP?") (unit 1) (value "SolderJumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/0c9257c6-b267-4a8f-a100-78b604b4212d"
+      (reference "JP?") (unit 1) (value "SolderJumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/11d80837-4348-4cae-b50e-d85b70ef8710"
+      (reference "JP?") (unit 1) (value "SolderJumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/1ea89a5c-c2f6-49de-82c0-016f221f11f3"
+      (reference "JP?") (unit 1) (value "SolderJumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/29a0d1da-2085-4fb2-b318-f752f6d50a24"
+      (reference "JP?") (unit 1) (value "SolderJumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/34a7dfe9-f43a-47eb-bf29-0d0676279a42"
+      (reference "JP?") (unit 1) (value "SolderJumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/3734ee69-748f-4fad-aa73-7ac057559e97"
+      (reference "JP?") (unit 1) (value "SolderJumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/6192f1b6-376a-4dc4-9c68-3da30dc80bc9"
+      (reference "JP?") (unit 1) (value "SolderJumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/649fe6bb-0658-4b43-8d27-851b473e5018"
+      (reference "JP?") (unit 1) (value "SolderJumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/822bf643-e157-4ebd-a33e-96fd27163e24"
+      (reference "JP?") (unit 1) (value "SolderJumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/cf66585c-5165-4f21-8f5a-c10e4557cc18"
+      (reference "JP?") (unit 1) (value "SolderJumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+    )
+    (path "/a59fe0f1-9f48-44b7-aa6e-47b197a73ed7/fd81609a-6f49-43ff-9cc4-c72147c45a06"
+      (reference "JP?") (unit 1) (value "SolderJumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+    )
+  )
+)
