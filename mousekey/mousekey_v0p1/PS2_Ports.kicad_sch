@@ -1,6 +1,6 @@
 (kicad_sch (version 20201015) (generator eeschema)
 
-  (page 1 3)
+  (page 1 5)
 
   (paper "A4")
 
@@ -431,11 +431,10 @@
   )
 
 
-
-  (no_connect (at 175.4632 65.786))
   (no_connect (at 175.4632 47.8536))
-  (no_connect (at 175.4632 37.6936))
   (no_connect (at 175.4632 75.946))
+  (no_connect (at 175.4632 65.786))
+  (no_connect (at 175.4632 37.6936))
 
   (wire (pts (xy 81.4832 42.3164) (xy 83.7184 42.3164))
     (stroke (width 0) (type solid) (color 0 0 0 0))

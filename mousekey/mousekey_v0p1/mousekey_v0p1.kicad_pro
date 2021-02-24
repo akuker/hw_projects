@@ -370,7 +370,7 @@
   },
   "sheets": [
     [
-      "7b048773-8943-4c1d-8f74-824907a62846",
+      "bcaf6d23-0b65-4221-9790-e77c5edcbee1",
       ""
     ],
     [
@@ -380,6 +380,14 @@
     [
       "dd09b3e0-597c-4f6d-aa94-26c459297424",
       "ADB_Ports"
+    ],
+    [
+      "abe4b3bd-7458-4c5b-9339-812d8ebf4a1d",
+      "USB Hub and Ports"
+    ],
+    [
+      "a9fbb1a7-2880-490b-89eb-60954e9c3a4a",
+      "RS-232"
     ]
   ],
   "text_variables": {}
