@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Apple2_bus)(type KiCad)(uri ${KIPRJMOD}/Apple2_bus)(options "")(descr ""))
+  (lib (name Apple2_bus_pretty)(type KiCad)(uri ${KIPRJMOD}/Apple2_bus/Apple2_bus.pretty)(options "")(descr ""))
+)
