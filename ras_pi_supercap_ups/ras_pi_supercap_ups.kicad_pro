@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 2.7,
+          "height": 2.7,
+          "width": 2.7
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -414,6 +414,10 @@
     [
       "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55",
       ""
+    ],
+    [
+      "c783ab4c-6f9b-478c-bda9-be5294b6d6a7",
+      "Raspberry Pi Connectors"
     ]
   ],
   "text_variables": {}
