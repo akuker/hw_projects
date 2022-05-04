@@ -2596,6 +2596,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 19515fa4-c166-4b6e-837d-c01a89e98000)
   )
+  (text "Option 3 - TPS54331DR" (at 121.92 115.57 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 31f14bd0-f648-44ee-8ee8-1872cd01d071)
+  )
   (text "Power connectors" (at 191.77 64.77 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 3437cbbb-feaf-4101-8645-c208cbb16e5f)
@@ -3673,10 +3677,10 @@
     (property "Reference" "J10" (id 0) (at 68.58 43.1799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "" (id 1) (at 68.58 45.7199 0)
+    (property "Value" "Conn_01x03" (id 1) (at 68.58 45.7199 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 66.04 44.45 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (id 2) (at 66.04 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 66.04 44.45 0)
@@ -3696,10 +3700,10 @@
     (property "Reference" "J12" (id 0) (at 214.63 72.3899 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "" (id 1) (at 214.63 74.9299 0)
+    (property "Value" "171826-4" (id 1) (at 214.63 74.9299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 210.82 74.93 0)
+    (property "Footprint" "TE_171826-4" (id 2) (at 210.82 74.93 0)
       (effects (font (size 1.27 1.27)) (justify left bottom) hide)
     )
     (property "Datasheet" "" (id 3) (at 210.82 74.93 0)
@@ -5084,14 +5088,26 @@
     )
   )
 
-  (sheet (at 127 130.81) (size 39.37 12.7) (fields_autoplaced)
+  (sheet (at 80.01 120.65) (size 29.21 21.59) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 90ba58c0-bb86-40e1-a3eb-4c6438e0a945)
+    (property "Sheet name" "Buck Converter" (id 0) (at 80.01 119.9384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "buck_conerter.kicad_sch" (id 1) (at 80.01 142.8246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 72.39 173.99) (size 39.37 12.7) (fields_autoplaced)
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
     (uuid c783ab4c-6f9b-478c-bda9-be5294b6d6a7)
-    (property "Sheet name" "Raspberry Pi Connectors" (id 0) (at 127 130.0984 0)
+    (property "Sheet name" "Raspberry Pi Connectors" (id 0) (at 72.39 173.2784 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheet file" "raspi_connectors.kicad_sch" (id 1) (at 127 144.0946 0)
+    (property "Sheet file" "raspi_connectors.kicad_sch" (id 1) (at 72.39 187.2746 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
   )
@@ -5099,6 +5115,7 @@
   (sheet_instances
     (path "/" (page "1"))
     (path "/c783ab4c-6f9b-478c-bda9-be5294b6d6a7" (page "2"))
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945" (page "3"))
   )
 
   (symbol_instances
@@ -5231,6 +5248,24 @@
     (path "/8ee74301-9326-4985-87c1-a67bf09412e4"
       (reference "#PWR0106") (unit 1) (value "GND") (footprint "")
     )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/e6ce3ddf-4520-4405-8108-ba1655fba88d"
+      (reference "#PWR0107") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/8198a8aa-a634-460a-b21c-b6a77ff2cbfb"
+      (reference "#PWR0108") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/27adb203-718d-444a-8040-f884266928ac"
+      (reference "#PWR0109") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/43879ac7-f230-4696-95ed-6babb22f0407"
+      (reference "#PWR0110") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/85ee7195-de50-4114-be45-19560de38bf5"
+      (reference "#PWR0111") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/459b2b91-449a-44df-86b2-6ea6b0ec5f29"
+      (reference "#PWR0112") (unit 1) (value "GND") (footprint "")
+    )
     (path "/f3b0a20e-4c8e-4cdd-b600-0f64fa0e367b"
       (reference "C1") (unit 1) (value "10F") (footprint "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm")
     )
@@ -5267,6 +5302,33 @@
     (path "/54c275d4-03ba-425a-94e5-62bc35c61293"
       (reference "C12") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/1aee80e0-d5ab-4041-a69f-25c9526af2c9"
+      (reference "C101") (unit 1) (value "4.7u") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/7f290db6-baca-4c3e-b3ab-eccf38ab3ab8"
+      (reference "C102") (unit 1) (value "4.7u") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/d386a4ed-6f5f-41e0-bd59-e257d591d691"
+      (reference "C103") (unit 1) (value "0.01u") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/4d1de5fc-63eb-4508-a6cb-5dfbce2f9c27"
+      (reference "C104") (unit 1) (value "0.1u") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/9214c3d8-8058-4003-977f-8d150c662226"
+      (reference "C105") (unit 1) (value "0.01u") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/45663991-efaa-4bf4-9634-0270f1f3793d"
+      (reference "C106") (unit 1) (value "1000p") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/51bf57bb-586e-41c7-b39c-b7a9940bcccf"
+      (reference "C107") (unit 1) (value "47p") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/88e71f15-52d0-4bd9-8ee2-a11f1c4fae0f"
+      (reference "C108") (unit 1) (value "47u") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/369f5296-8766-4702-957b-6c6122f23c3c"
+      (reference "C109") (unit 1) (value "47u") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
     (path "/0d33a0a3-6701-41b8-8040-7340c4d8cd33"
       (reference "D1") (unit 1) (value "B340LA-13-F") (footprint "Diode_SMD:D_SMA")
     )
@@ -5281,6 +5343,9 @@
     )
     (path "/c1bd466d-fe29-493f-ab7a-15c6fc834f49"
       (reference "D20") (unit 1) (value "Green") (footprint "LED_SMD:LED_0805_2012Metric")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/b4776be9-846e-4f7b-8000-c86b979502bd"
+      (reference "D101") (unit 1) (value "B340A") (footprint "Diode_SMD:D_SMA")
     )
     (path "/ad7143b5-340a-4af7-889c-efa5a5b701b0"
       (reference "F1") (unit 1) (value "Fuse_Small") (footprint "Fuse:Fuse_1206_3216Metric")
@@ -5298,10 +5363,10 @@
       (reference "H4") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.7mm_M2.5")
     )
     (path "/c783ab4c-6f9b-478c-bda9-be5294b6d6a7/fc81ca8f-df1f-49ee-b900-486b8ee17f48"
-      (reference "J1") (unit 1) (value "Raspberry_Pi_2_3") (footprint "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical")
+      (reference "J1") (unit 1) (value "Raspberry_Pi_2_3") (footprint "")
     )
     (path "/c783ab4c-6f9b-478c-bda9-be5294b6d6a7/9b50deac-a15e-4279-8964-578c1305abe5"
-      (reference "J2") (unit 1) (value "Raspberry_Pi_2_3") (footprint "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical")
+      (reference "J2") (unit 1) (value "Raspberry_Pi_2_3") (footprint "")
     )
     (path "/801da5bf-4bc0-4304-a810-8e7ca96cd81e"
       (reference "J3") (unit 1) (value "Conn_01x05") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical")
@@ -5335,6 +5400,9 @@
     )
     (path "/f3b6b792-edad-4dc3-beb7-3ec2ff311b84"
       (reference "JP4") (unit 1) (value "SolderJumper_2_Open") (footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/7b0d2f0b-642a-441b-8802-b4d4fe4198d3"
+      (reference "L101") (unit 1) (value "6.8uH") (footprint "Inductor_SMD:L_6.3x6.3_H3")
     )
     (path "/132098bb-22d7-46df-8f43-55471e68e57a"
       (reference "Q1") (unit 1) (value "IRF5305") (footprint "Package_TO_SOT_SMD:TO-263-2")
@@ -5383,6 +5451,24 @@
     )
     (path "/efca91ad-1c9e-4b73-8a42-4312cd6f2fed"
       (reference "R21") (unit 1) (value "47k") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/403438b4-fc93-4243-82bc-3a27f53097d0"
+      (reference "R101") (unit 1) (value "332k") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/2e07edd4-3513-42be-914c-012ab28f0b65"
+      (reference "R102") (unit 1) (value "68.1k") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/2321c361-f940-46f4-bf53-78d84a432824"
+      (reference "R103") (unit 1) (value "29.4k") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/8f1af006-b4f9-4d27-897d-093910fc650f"
+      (reference "R104") (unit 1) (value "0") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/94614162-ac83-46a8-9bcf-e0257f48e678"
+      (reference "R105") (unit 1) (value "10.2k") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/a1816a33-27f8-4d1d-bc90-431b78c69efc"
+      (reference "R106") (unit 1) (value "3.24k") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/b0a2a0f7-05d9-4df6-b2d4-a22f4c69bbff"
       (reference "TP1") (unit 1) (value "TestPoint_Small") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
@@ -5437,6 +5523,9 @@
     )
     (path "/c980137a-2529-4abd-a1f2-14ca7da780bd"
       (reference "U9") (unit 1) (value "STC8H1K08") (footprint "Package_SO:TSSOP-20_4.4x5mm_P0.5mm")
+    )
+    (path "/90ba58c0-bb86-40e1-a3eb-4c6438e0a945/a79ca793-b460-4b18-a91b-9f80075c3273"
+      (reference "U10") (unit 1) (value "TPS54331DR") (footprint "SOIC127P599X175-8N")
     )
   )
 )

@@ -418,6 +418,10 @@
     [
       "c783ab4c-6f9b-478c-bda9-be5294b6d6a7",
       "Raspberry Pi Connectors"
+    ],
+    [
+      "90ba58c0-bb86-40e1-a3eb-4c6438e0a945",
+      "Buck Converter"
     ]
   ],
   "text_variables": {}
