@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "raspberrypi_supercap_ups_lib")(type "KiCad")(uri "${KIPRJMOD}/../ras_pi_supercap_ups/raspberrypi_supercap_ups_lib.pretty")(options "")(descr ""))
+)
