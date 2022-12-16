@@ -1,5 +1,6 @@
 {
   "board": {
+    "3dviewports": [],
     "design_settings": {
       "defaults": {
         "board_outline_line_width": 0.09999999999999999,
@@ -140,7 +141,8 @@
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
-    "layer_presets": []
+    "layer_presets": [],
+    "viewports": []
   },
   "boards": [],
   "cvpcb": {
@@ -390,7 +392,9 @@
         "name": "Power",
         "nets": [
           "+3V3",
-          "GND"
+          "GND",
+          "VBUS",
+          "VDD"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -410,6 +414,10 @@
         "microvia_drill": 0.1,
         "name": "SCSI_SIGNAL",
         "nets": [
+          "BUTTON_SELECT_0",
+          "BUTTON_SELECT_1",
+          "BUTTON_SELECT_2",
+          "BUTTON_SELECT_3",
           "J1_Pin10",
           "J1_Pin12",
           "J1_Pin14",
@@ -534,7 +542,10 @@
           "J5_Pin48",
           "J5_Pin50",
           "J5_Pin6",
-          "J5_Pin8"
+          "J5_Pin8",
+          "MUX_INHIBIT",
+          "MUX_SELECT_A",
+          "MUX_SELECT_B"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",

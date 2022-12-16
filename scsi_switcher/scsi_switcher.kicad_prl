@@ -7,6 +7,7 @@
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
+      "images": 0.6,
       "pads": 1.0,
       "tracks": 1.0,
       "vias": 1.0,
@@ -62,7 +63,7 @@
       35,
       36
     ],
-    "visible_layers": "7ffffff_80000007",
+    "visible_layers": "7fce0ff_80000007",
     "zone_display_mode": 0
   },
   "meta": {
