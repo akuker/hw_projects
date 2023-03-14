@@ -508,7 +508,6 @@
   )
 
 
-
   (wire (pts (xy 80.01 52.07) (xy 60.96 52.07))
     (stroke (width 0) (type default))
     (uuid 040df910-5f70-43b7-a5f6-57e7f668756a)
@@ -873,6 +872,46 @@
     )
   )
 
+  (symbol (lib_id "Connector:TestPoint_Small") (at 121.92 38.1 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 153357c0-6fcd-4b0f-a08b-fac54c72b53a)
+    (property "Reference" "TP24" (at 123.19 37.465 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Value" "TestPoint_Small" (at 123.19 40.005 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 127 38.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 127 38.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "--" (at 121.92 38.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a41d946d-dce2-4297-9a20-1a7fd51f98df))
+    (instances
+      (project "VintageKVM"
+        (path "/0df57c0f-e3f8-4833-8220-8bc28fb0679b/dc07f00d-46a4-40f3-bf2d-d35802205bc0"
+          (reference "TP24") (unit 1)
+        )
+        (path "/0df57c0f-e3f8-4833-8220-8bc28fb0679b/65bd2f50-e110-43d2-b552-ceb5b0e235fa"
+          (reference "TP25") (unit 1)
+        )
+        (path "/0df57c0f-e3f8-4833-8220-8bc28fb0679b/768c7394-476e-4583-9782-f255c84eb6fd"
+          (reference "TP26") (unit 1)
+        )
+        (path "/0df57c0f-e3f8-4833-8220-8bc28fb0679b/1199b545-6212-4a4f-aca3-94e24cdeabd7"
+          (reference "TP27") (unit 1)
+        )
+        (path "/0df57c0f-e3f8-4833-8220-8bc28fb0679b/b02c78f1-86bc-4a02-8edd-75433b5f5843"
+          (reference "TP28") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Jumper:SolderJumper_2_Bridged") (at 134.62 35.56 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2b259edf-6d7f-44b9-9b29-13e287458268)
@@ -909,43 +948,6 @@
         )
         (path "/0df57c0f-e3f8-4833-8220-8bc28fb0679b/b02c78f1-86bc-4a02-8edd-75433b5f5843"
           (reference "JP89") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 121.92 38.1 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 30f2e203-d6f1-4cf1-8206-aa80ef03b2d7)
-    (property "Reference" "#PWR051" (at 121.92 31.75 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 121.92 34.29 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 121.92 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 121.92 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b1fa26ba-6a1d-4a2a-b195-0f06f7f29255))
-    (instances
-      (project "VintageKVM"
-        (path "/0df57c0f-e3f8-4833-8220-8bc28fb0679b/dc07f00d-46a4-40f3-bf2d-d35802205bc0"
-          (reference "#PWR051") (unit 1)
-        )
-        (path "/0df57c0f-e3f8-4833-8220-8bc28fb0679b/65bd2f50-e110-43d2-b552-ceb5b0e235fa"
-          (reference "#PWR062") (unit 1)
-        )
-        (path "/0df57c0f-e3f8-4833-8220-8bc28fb0679b/768c7394-476e-4583-9782-f255c84eb6fd"
-          (reference "#PWR073") (unit 1)
-        )
-        (path "/0df57c0f-e3f8-4833-8220-8bc28fb0679b/1199b545-6212-4a4f-aca3-94e24cdeabd7"
-          (reference "#PWR084") (unit 1)
-        )
-        (path "/0df57c0f-e3f8-4833-8220-8bc28fb0679b/b02c78f1-86bc-4a02-8edd-75433b5f5843"
-          (reference "#PWR095") (unit 1)
         )
       )
     )
