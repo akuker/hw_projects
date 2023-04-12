@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "CD74HC4052M96")(type "KiCad")(uri "${KIPRJMOD}/CD74HC4052M96")(options "")(descr ""))
+  (lib (name "MCU_RaspberryPi_and_Boards")(type "KiCad")(uri "${KIPRJMOD}/RP_Silicon_KiCad-main/KiCadLibraries/MCU_RaspberryPi_and_Boards.pretty")(options "")(descr ""))
+  (lib (name "custom_libs")(type "KiCad")(uri "${KIPRJMOD}/custom_libs")(options "")(descr ""))
+)

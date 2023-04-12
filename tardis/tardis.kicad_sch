@@ -1,0 +1,107 @@
+(kicad_sch (version 20220404) (generator eeschema)
+
+  (uuid b28667ca-9c26-43e8-ace4-e24181b5dcaf)
+
+  (paper "A4")
+
+  (lib_symbols
+    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (id 0) (at 0 -6.35 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "GND" (id 1) (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "power-flag" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "GND_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "GND_1_1"
+        (pin power_in line (at 0 0 270) (length 0) hide
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+  )
+
+
+
+  (wire (pts (xy 81.28 92.71) (xy 92.71 92.71))
+    (stroke (width 0) (type default))
+    (uuid fff1b2d8-da15-459d-bd9c-7e90cac866a4)
+  )
+
+  (symbol (lib_id "power:GND") (at 81.28 92.71 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 6fcd7622-7631-4840-b758-e12f81679457)
+    (default_instance (reference "#PWR") (unit 1) (value "GND") (footprint ""))
+    (property "Reference" "#PWR" (id 0) (at 81.28 99.06 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (id 1) (at 81.28 97.79 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 81.28 92.71 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 81.28 92.71 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7fd3abb7-22de-467b-867f-4f98ea9cf2b3))
+  )
+
+  (symbol (lib_id "power:GND") (at 92.71 92.71 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 900fc9fe-5f4e-447a-9e6a-b150acd8b889)
+    (default_instance (reference "#PWR") (unit 1) (value "GND") (footprint ""))
+    (property "Reference" "#PWR" (id 0) (at 92.71 99.06 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (id 1) (at 92.71 97.79 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 92.71 92.71 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 92.71 92.71 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c9a4d674-e015-4417-8cb9-75b2d755269a))
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+
+  (symbol_instances
+    (path "/6fcd7622-7631-4840-b758-e12f81679457"
+      (reference "#PWR02") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/900fc9fe-5f4e-447a-9e6a-b150acd8b889"
+      (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
+    )
+  )
+)
