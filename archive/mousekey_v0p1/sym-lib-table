@@ -1,0 +1,9 @@
+(sym_lib_table
+  (lib (name "MD-60S")(type "Legacy")(uri "${KIPRJMOD}/MD-60S.lib")(options "")(descr ""))
+  (lib (name "LSF0204DPWR")(type "Legacy")(uri "${KIPRJMOD}/LSF0204DPWR.lib")(options "")(descr ""))
+  (lib (name "MCU_RaspberryPi_and_Boards")(type "Legacy")(uri "${KIPRJMOD}/RP_Silicon_KiCad-main/KiCadLibraries/MCU_RaspberryPi_and_Boards.lib")(options "")(descr ""))
+  (lib (name "MD-40S")(type "Legacy")(uri "${KIPRJMOD}/MD-40S.lib")(options "")(descr ""))
+  (lib (name "teensy")(type "Legacy")(uri "${KIPRJMOD}/teensy_library-master/teensy.lib")(options "")(descr ""))
+  (lib (name "2021-02-10_03-52-52")(type "Legacy")(uri "${KIPRJMOD}/2021-02-10_03-52-52.lib")(options "")(descr ""))
+  (lib (name "MAX3221CPWR")(type "Legacy")(uri "${KIPRJMOD}/MAX3221CPWR.lib")(options "")(descr ""))
+)
