@@ -1,0 +1,116 @@
+(footprint "Pin_D0.6mm_Via"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Via Footprint that can be added to schematic")
+	(tags "via pin pad")
+	(property "Reference" "REF**"
+		(at 0 1.8 0)
+		(layer "Dwgs.User")
+		(uuid "b648ac41-e99b-4b44-bb62-2d7e27666e78")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Pin_D0.7mm_L6.5mm_W1.8mm_FlatFork"
+		(at 0 -1.8 0)
+		(layer "F.Fab")
+		(uuid "23741efe-d2b5-4e3c-9194-162a2dda2fac")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "Pin_D0.6mm_Via"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "910594df-a6d8-45d9-89ac-82b4917c76d4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a1fed4f-d446-4bba-bafb-98731da45f78")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bf38a25a-cf04-4d43-9c2d-bcd9e7b74811")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_circle
+		(center 0 -0.45)
+		(end 0.2 -0.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "b168fead-c923-467d-988d-0b362c07f22c")
+	)
+	(fp_circle
+		(center 0 0.45)
+		(end 0.2 0.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "5708f6e7-27c8-41c2-bb0e-e35f1eabfacd")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 1.8 0)
+		(layer "F.Fab")
+		(uuid "cefb884b-e709-4ab3-b075-e18012c1067a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 -0.45)
+		(size 0.6 0.6)
+		(drill 0.3)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(uuid "6fab8ec5-2df6-451c-90cc-5fa9bf92d165")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0.45)
+		(size 0.6 0.6)
+		(drill 0.3)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(uuid "a51017a3-63e6-48fe-ae2a-9cc5524a1e45")
+	)
+)
