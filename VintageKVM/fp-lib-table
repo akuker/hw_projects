@@ -1,0 +1,7 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "libraries")(type "KiCad")(uri "${KIPRJMOD}/libraries")(options "")(descr ""))
+  (lib (name "RP-Pico Libraries")(type "KiCad")(uri "${KIPRJMOD}/libraries/RP-Pico Libraries")(options "")(descr ""))
+  (lib (name "TS5V522CPWR")(type "KiCad")(uri "${KIPRJMOD}/libraries/TS5V522CPWR")(options "")(descr ""))
+  (lib (name "MCU_RaspberryPi_and_Boards")(type "KiCad")(uri "${KIPRJMOD}/libraries/RP-Pico Libraries/MCU_RaspberryPi_and_Boards.pretty")(options "")(descr ""))
+)
