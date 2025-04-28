@@ -1,0 +1,56 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model NCN26010XMNTXG
+#/17203230/304666/2.50/33/2/Integrated Circuit
+DEF NCN26010XMNTXG IC 0 30 Y Y 1 F N
+F0 "IC" 1250 700 50 H V L CNN
+F1 "NCN26010XMNTXG" 1250 600 50 H V L CNN
+F2 "NCN26010XMNTXG" 1250 500 50 H I L CNN
+F3 "https://www.onsemi.com/pub/Collateral/NCN26010-D.PDF" 1250 400 50 H I L CNN
+F4 "Enhanced Noise Immunity Mode: - ENI extends the noise immunity to values well above the IEEE T1S standard - Allows the NCN26010 to withstand worst-case DPI and BCI immunity tests - Significantly improves the network reach when enabled, almost 2X better than competition - Unique to NCN26010; Lowest Line Pin Capacitance: - Best-in-class line pin capacitance allows for the highest number of nodes per segment. - The NCN26010 supports up to 40 nodes on a 25-meter segment, well above the IEEE minimum standard - L" 1250 300 50 H I L CNN "Description"
+F5 "1" 1250 200 50 H I L CNN "Height"
+F6 "onsemi" 1250 100 50 H I L CNN "Manufacturer_Name"
+F7 "NCN26010XMNTXG" 1250 0 50 H I L CNN "Manufacturer_Part_Number"
+F8 "863-NCN26010XMNTXG" 1250 -100 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/onsemi/NCN26010XMNTXG?qs=vvQtp7zwQdP81A3PyQkyFA%3D%3D" 1250 -200 50 H I L CNN "Mouser Price/Stock"
+F10 "" 1250 -300 50 H I L CNN "Arrow Part Number"
+F11 "" 1250 -400 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X XO 1 0 0 200 R 50 50 0 0 P
+X XI 2 0 -100 200 R 50 50 0 0 P
+X GND_1 3 0 -200 200 R 50 50 0 0 P
+X VDD 4 0 -300 200 R 50 50 0 0 P
+X GND_2 5 0 -400 200 R 50 50 0 0 P
+X LINEP 6 0 -500 200 R 50 50 0 0 P
+X LINEN 7 0 -600 200 R 50 50 0 0 P
+X VDRVN 8 0 -700 200 R 50 50 0 0 P
+X GND_3 9 300 -1400 200 U 50 50 0 0 P
+X GND_4 10 400 -1400 200 U 50 50 0 0 P
+X DIO1 11 500 -1400 200 U 50 50 0 0 P
+X DIO0 12 600 -1400 200 U 50 50 0 0 P
+X RSTN 13 700 -1400 200 U 50 50 0 0 P
+X GND_5 14 800 -1400 200 U 50 50 0 0 P
+X SCLK 15 900 -1400 200 U 50 50 0 0 P
+X IRQN 16 1000 -1400 200 U 50 50 0 0 P
+X VDDIO_1 17 1400 -700 200 L 50 50 0 0 P
+X MOSI 18 1400 -600 200 L 50 50 0 0 P
+X CSN 19 1400 -500 200 L 50 50 0 0 P
+X CLKO 20 1400 -400 200 L 50 50 0 0 P
+X VDDIO_2 21 1400 -300 200 L 50 50 0 0 P
+X GND_6 22 1400 -200 200 L 50 50 0 0 P
+X MISO 23 1400 -100 200 L 50 50 0 0 P
+X GND_7 24 1400 0 200 L 50 50 0 0 P
+X NC_1 25 1100 700 200 D 50 50 0 0 P
+X NC_2 26 1000 700 200 D 50 50 0 0 P
+X NC_3 27 900 700 200 D 50 50 0 0 P
+X DVDD_1 28 800 700 200 D 50 50 0 0 P
+X DVDD_2 29 700 700 200 D 50 50 0 0 P
+X GND_8 30 600 700 200 D 50 50 0 0 P
+X GND_9 31 500 700 200 D 50 50 0 0 P
+X NC_4 32 400 700 200 D 50 50 0 0 P
+X EP 33 300 700 200 D 50 50 0 0 P
+P 5 0 1 6 200 500 1200 500 1200 -1200 200 -1200 200 500 N
+ENDDRAW
+ENDDEF
+#
+#End Library
