@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "SP3232EET-L")(type "KiCad")(uri "${KIPRJMOD}/SP3232EET-L")(options "")(descr ""))
+)
