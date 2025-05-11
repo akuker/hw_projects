@@ -1,4 +1,7 @@
 (fp_lib_table
   (version 7)
   (lib (name "SP3232EET-L")(type "KiCad")(uri "${KIPRJMOD}/SP3232EET-L")(options "")(descr ""))
+  (lib (name "NCN26010XMNTXG")(type "KiCad")(uri "${KIPRJMOD}/NCN26010XMNTXG")(options "")(descr ""))
+  (lib (name "RPi_Pico")(type "KiCad")(uri "${KIPRJMOD}/RPi_Pico.pretty")(options "")(descr ""))
+  (lib (name "DLW32MH201XK2L")(type "KiCad")(uri "${KIPRJMOD}/DLW32MH201XK2L")(options "")(descr ""))
 )

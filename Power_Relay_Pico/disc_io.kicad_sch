@@ -2239,177 +2239,6 @@
 				)
 			)
 		)
-		(symbol "Device:LED_Small"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at -1.27 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "LED_Small"
-				(at -4.445 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Light emitting diode, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "LED diode light-emitting-diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LED_Small_0_1"
-				(polyline
-					(pts
-						(xy -0.762 -1.016) (xy -0.762 1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy -0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LED_Small_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.778)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.778)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:R_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -3578,12 +3407,6 @@
 		)
 	)
 	(junction
-		(at 181.61 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0f8173e9-22d0-4699-bedf-114d7dceea87")
-	)
-	(junction
 		(at 66.04 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3596,12 +3419,6 @@
 		(uuid "33ecc05d-4d52-4f20-beec-f5dc10a3a0d4")
 	)
 	(junction
-		(at 173.99 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3fb15e44-6d66-4457-8f81-ef71617f2007")
-	)
-	(junction
 		(at 50.8 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3612,12 +3429,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4dafc6d9-76eb-48df-b96c-7aa570dee014")
-	)
-	(junction
-		(at 189.23 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "59d51abd-526e-40c3-bc4f-18e2b743909a")
 	)
 	(junction
 		(at 252.73 29.21)
@@ -3785,16 +3596,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 80.01) (xy 173.99 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "007c5d83-2dd6-430d-b051-4828c9bbcb2e")
-	)
-	(wire
-		(pts
 			(xy 246.38 34.29) (xy 246.38 35.56)
 		)
 		(stroke
@@ -3872,16 +3673,6 @@
 			(type default)
 		)
 		(uuid "0e1e85f2-8a62-4091-9acb-97fbeefb9ebf")
-	)
-	(wire
-		(pts
-			(xy 181.61 87.63) (xy 181.61 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10b182a1-bb05-405b-aeaa-9d427032ea0e")
 	)
 	(wire
 		(pts
@@ -3965,16 +3756,6 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 80.01) (xy 181.61 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b2fa031-6ecf-4fa5-8059-54c7031c6476")
-	)
-	(wire
-		(pts
 			(xy 88.9 148.59) (xy 88.9 160.02)
 		)
 		(stroke
@@ -3995,16 +3776,6 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 87.63) (xy 196.85 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d67a33e-bde3-48cf-8797-b95865d2400c")
-	)
-	(wire
-		(pts
 			(xy 198.12 40.64) (xy 198.12 41.91)
 		)
 		(stroke
@@ -4012,16 +3783,6 @@
 			(type default)
 		)
 		(uuid "2d78a8b8-e6a4-47c4-bc30-20eb4bd1c3a8")
-	)
-	(wire
-		(pts
-			(xy 189.23 87.63) (xy 189.23 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "306ab889-fb35-433a-ae77-b816abf022e1")
 	)
 	(wire
 		(pts
@@ -4225,16 +3986,6 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 80.01) (xy 189.23 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5510a7ad-11c5-4d88-a17c-7f83403a03cf")
-	)
-	(wire
-		(pts
 			(xy 40.64 173.99) (xy 58.42 173.99)
 		)
 		(stroke
@@ -4435,16 +4186,6 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 82.55) (xy 196.85 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81b781ba-70e7-42af-a661-bf6287c90cc3")
-	)
-	(wire
-		(pts
 			(xy 85.09 146.05) (xy 128.27 146.05)
 		)
 		(stroke
@@ -4515,16 +4256,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 80.01) (xy 189.23 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9356c14e-28f9-48a2-9382-0d04851d0324")
-	)
-	(wire
-		(pts
 			(xy 204.47 67.31) (xy 207.01 67.31)
 		)
 		(stroke
@@ -4532,16 +4263,6 @@
 			(type default)
 		)
 		(uuid "94fab0d6-2814-40bd-85cf-864961a750b2")
-	)
-	(wire
-		(pts
-			(xy 189.23 80.01) (xy 196.85 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "962efcc4-21f0-4683-bc5c-62db7e825ce6")
 	)
 	(wire
 		(pts
@@ -4605,16 +4326,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 80.01) (xy 181.61 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9bc512c-772b-4e92-9b09-f0a782ceb127")
-	)
-	(wire
-		(pts
 			(xy 85.09 187.96) (xy 93.98 187.96)
 		)
 		(stroke
@@ -4622,16 +4333,6 @@
 			(type default)
 		)
 		(uuid "b0ad3fc7-07c0-477d-948e-5d216e53f4e9")
-	)
-	(wire
-		(pts
-			(xy 173.99 87.63) (xy 173.99 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0f777b7-cc6d-4c5b-b360-63d022b70768")
 	)
 	(wire
 		(pts
@@ -5519,50 +5220,6 @@
 			)
 		)
 	)
-	(global_label "LED_4"
-		(shape input)
-		(at 196.85 93.98 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "54a948be-d7e2-44c2-9485-c75050786212")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 196.85 102.5894 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LED_2"
-		(shape input)
-		(at 181.61 93.98 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "561b50ff-9ec8-4076-8ba3-8713fbfba4c6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.61 102.5894 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "EXT_DO_1"
 		(shape input)
 		(at 95.25 41.91 0)
@@ -5642,28 +5299,6 @@
 		(uuid "613f2c2b-02b0-41bb-be06-88ffcd2c2985")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 179.8948 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LED_3"
-		(shape input)
-		(at 189.23 93.98 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "618e898d-0e01-4c58-9f22-c66a77d2fb1e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 189.23 102.5894 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6619,28 +6254,6 @@
 			)
 		)
 	)
-	(global_label "LED_1"
-		(shape input)
-		(at 173.99 93.98 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ec2e78f9-42e4-4968-acd2-5349a2a0ec20")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.99 102.5894 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SR_RCLK"
 		(shape input)
 		(at 34.29 91.44 180)
@@ -7018,46 +6631,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "440c1fc1-24b8-4a9f-aaf9-5ee80c32b14f")
+			(uuid "440c1fc1-24b8-4a9f-aaf9-5ee80c32b150")
 		)
 		(pin "14"
-			(uuid "f9fa067c-9eb3-4697-892c-fb48064c1fb9")
+			(uuid "f9fa067c-9eb3-4697-892c-fb48064c1fba")
 		)
 		(pin "7"
-			(uuid "1b9bbc29-51b5-4e60-98f4-ee60f3011655")
+			(uuid "1b9bbc29-51b5-4e60-98f4-ee60f3011656")
 		)
 		(pin "1"
-			(uuid "2e6222d6-272d-4fb5-aac7-1eef3b83dc7a")
+			(uuid "2e6222d6-272d-4fb5-aac7-1eef3b83dc7b")
 		)
 		(pin "12"
-			(uuid "6ef5c8d3-4f52-41b5-be5d-868425d81910")
+			(uuid "6ef5c8d3-4f52-41b5-be5d-868425d81911")
 		)
 		(pin "13"
-			(uuid "de43a8b4-b818-4748-8ca8-1efd79444c6d")
+			(uuid "de43a8b4-b818-4748-8ca8-1efd79444c6e")
 		)
 		(pin "10"
-			(uuid "f53bb8ca-ff20-4eda-82f1-1c02a7e55bdb")
+			(uuid "f53bb8ca-ff20-4eda-82f1-1c02a7e55bdc")
 		)
 		(pin "11"
-			(uuid "c9de3c76-a4f8-483e-86dc-64940e62a8f4")
+			(uuid "c9de3c76-a4f8-483e-86dc-64940e62a8f5")
 		)
 		(pin "5"
-			(uuid "939ee049-5b77-4b8c-8dfa-1f6e864369b5")
+			(uuid "939ee049-5b77-4b8c-8dfa-1f6e864369b6")
 		)
 		(pin "6"
-			(uuid "293dc136-1a72-4f1f-871f-5921346e0d65")
+			(uuid "293dc136-1a72-4f1f-871f-5921346e0d66")
 		)
 		(pin "3"
-			(uuid "44bbe9cc-fc26-4601-85b0-9751c161adb7")
+			(uuid "44bbe9cc-fc26-4601-85b0-9751c161adb8")
 		)
 		(pin "4"
-			(uuid "3fc1aaa1-affa-4134-ab7d-eb28d1606a2d")
+			(uuid "3fc1aaa1-affa-4134-ab7d-eb28d1606a2e")
 		)
 		(pin "8"
-			(uuid "ba2a585b-3e45-450b-8f34-5ca308c9656c")
+			(uuid "ba2a585b-3e45-450b-8f34-5ca308c9656d")
 		)
 		(pin "9"
-			(uuid "da05230d-d022-416b-aa50-dc8604c64953")
+			(uuid "da05230d-d022-416b-aa50-dc8604c64954")
 		)
 		(instances
 			(project "Power_Relay_Pico"
@@ -7115,6 +6728,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 198.12 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
 			(at 198.12 38.1 0)
 			(effects
 				(font
@@ -7193,6 +6815,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "--"
+			(at 33.02 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d735544a-4a95-48c3-a154-f2275d5d1efc")
 		)
@@ -7255,6 +6886,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 266.7 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 266.7 93.98 0)
 			(effects
 				(font
@@ -7438,6 +7078,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 204.47 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 204.47 93.98 0)
 			(effects
 				(font
@@ -7649,6 +7298,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C14663"
+			(at 257.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "70846d23-eaa7-44ef-90dd-97a09bd9b476")
 		)
@@ -7850,6 +7508,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "--"
+			(at 260.35 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a2b6ae93-9ccf-4d03-8cc5-918f0b0e254f")
 		)
@@ -8004,46 +7671,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "440c1fc1-24b8-4a9f-aaf9-5ee80c32b14f")
+			(uuid "440c1fc1-24b8-4a9f-aaf9-5ee80c32b151")
 		)
 		(pin "14"
-			(uuid "f9fa067c-9eb3-4697-892c-fb48064c1fb9")
+			(uuid "f9fa067c-9eb3-4697-892c-fb48064c1fbb")
 		)
 		(pin "7"
-			(uuid "1b9bbc29-51b5-4e60-98f4-ee60f3011655")
+			(uuid "1b9bbc29-51b5-4e60-98f4-ee60f3011657")
 		)
 		(pin "1"
-			(uuid "2e6222d6-272d-4fb5-aac7-1eef3b83dc7a")
+			(uuid "2e6222d6-272d-4fb5-aac7-1eef3b83dc7c")
 		)
 		(pin "12"
-			(uuid "6ef5c8d3-4f52-41b5-be5d-868425d81910")
+			(uuid "6ef5c8d3-4f52-41b5-be5d-868425d81912")
 		)
 		(pin "13"
-			(uuid "de43a8b4-b818-4748-8ca8-1efd79444c6d")
+			(uuid "de43a8b4-b818-4748-8ca8-1efd79444c6f")
 		)
 		(pin "10"
-			(uuid "f53bb8ca-ff20-4eda-82f1-1c02a7e55bdb")
+			(uuid "f53bb8ca-ff20-4eda-82f1-1c02a7e55bdd")
 		)
 		(pin "11"
-			(uuid "c9de3c76-a4f8-483e-86dc-64940e62a8f4")
+			(uuid "c9de3c76-a4f8-483e-86dc-64940e62a8f6")
 		)
 		(pin "5"
-			(uuid "939ee049-5b77-4b8c-8dfa-1f6e864369b5")
+			(uuid "939ee049-5b77-4b8c-8dfa-1f6e864369b7")
 		)
 		(pin "6"
-			(uuid "293dc136-1a72-4f1f-871f-5921346e0d65")
+			(uuid "293dc136-1a72-4f1f-871f-5921346e0d67")
 		)
 		(pin "3"
-			(uuid "44bbe9cc-fc26-4601-85b0-9751c161adb7")
+			(uuid "44bbe9cc-fc26-4601-85b0-9751c161adb9")
 		)
 		(pin "4"
-			(uuid "3fc1aaa1-affa-4134-ab7d-eb28d1606a2d")
+			(uuid "3fc1aaa1-affa-4134-ab7d-eb28d1606a2f")
 		)
 		(pin "8"
-			(uuid "ba2a585b-3e45-450b-8f34-5ca308c9656c")
+			(uuid "ba2a585b-3e45-450b-8f34-5ca308c9656e")
 		)
 		(pin "9"
-			(uuid "da05230d-d022-416b-aa50-dc8604c64953")
+			(uuid "da05230d-d022-416b-aa50-dc8604c64955")
 		)
 		(instances
 			(project "Power_Relay_Pico"
@@ -8100,6 +7767,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 43.18 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
 			(at 43.18 138.43 0)
 			(effects
 				(font
@@ -8169,6 +7845,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 50.8 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
 			(at 50.8 138.43 0)
 			(effects
 				(font
@@ -8646,6 +8331,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C14663"
+			(at 240.03 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "824af9e4-9d0a-4855-bb5f-c97b9f60ddc8")
 		)
@@ -8723,46 +8417,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "440c1fc1-24b8-4a9f-aaf9-5ee80c32b14f")
+			(uuid "440c1fc1-24b8-4a9f-aaf9-5ee80c32b152")
 		)
 		(pin "14"
-			(uuid "f9fa067c-9eb3-4697-892c-fb48064c1fb9")
+			(uuid "f9fa067c-9eb3-4697-892c-fb48064c1fbc")
 		)
 		(pin "7"
-			(uuid "1b9bbc29-51b5-4e60-98f4-ee60f3011655")
+			(uuid "1b9bbc29-51b5-4e60-98f4-ee60f3011658")
 		)
 		(pin "1"
-			(uuid "2e6222d6-272d-4fb5-aac7-1eef3b83dc7a")
+			(uuid "2e6222d6-272d-4fb5-aac7-1eef3b83dc7d")
 		)
 		(pin "12"
-			(uuid "6ef5c8d3-4f52-41b5-be5d-868425d81910")
+			(uuid "6ef5c8d3-4f52-41b5-be5d-868425d81913")
 		)
 		(pin "13"
-			(uuid "de43a8b4-b818-4748-8ca8-1efd79444c6d")
+			(uuid "de43a8b4-b818-4748-8ca8-1efd79444c70")
 		)
 		(pin "10"
-			(uuid "f53bb8ca-ff20-4eda-82f1-1c02a7e55bdb")
+			(uuid "f53bb8ca-ff20-4eda-82f1-1c02a7e55bde")
 		)
 		(pin "11"
-			(uuid "c9de3c76-a4f8-483e-86dc-64940e62a8f4")
+			(uuid "c9de3c76-a4f8-483e-86dc-64940e62a8f7")
 		)
 		(pin "5"
-			(uuid "939ee049-5b77-4b8c-8dfa-1f6e864369b5")
+			(uuid "939ee049-5b77-4b8c-8dfa-1f6e864369b8")
 		)
 		(pin "6"
-			(uuid "293dc136-1a72-4f1f-871f-5921346e0d65")
+			(uuid "293dc136-1a72-4f1f-871f-5921346e0d68")
 		)
 		(pin "3"
-			(uuid "44bbe9cc-fc26-4601-85b0-9751c161adb7")
+			(uuid "44bbe9cc-fc26-4601-85b0-9751c161adba")
 		)
 		(pin "4"
-			(uuid "3fc1aaa1-affa-4134-ab7d-eb28d1606a2d")
+			(uuid "3fc1aaa1-affa-4134-ab7d-eb28d1606a30")
 		)
 		(pin "8"
-			(uuid "ba2a585b-3e45-450b-8f34-5ca308c9656c")
+			(uuid "ba2a585b-3e45-450b-8f34-5ca308c9656f")
 		)
 		(pin "9"
-			(uuid "da05230d-d022-416b-aa50-dc8604c64953")
+			(uuid "da05230d-d022-416b-aa50-dc8604c64956")
 		)
 		(instances
 			(project "Power_Relay_Pico"
@@ -9023,6 +8717,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 240.03 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "42698d4a-6c97-4453-b527-48f10a09b12d")
 		)
@@ -9091,6 +8794,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 191.77 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f948157a-ccd3-49e3-9453-844a815f5374")
 		)
@@ -9101,76 +8813,6 @@
 			(project "Power_Relay_Pico"
 				(path "/566cf8d0-193a-44fb-9475-e4a407004a06/5213e1fa-cae3-4eca-b710-bc820090e61b"
 					(reference "R303")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED_Small")
-		(at 181.61 85.09 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "50140ec0-2163-4951-b0b4-d411c0e96acc")
-		(property "Reference" "D302"
-			(at 186.69 83.312 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LED_Small"
-			(at 179.07 83.7566 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D3.0mm"
-			(at 181.61 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 181.61 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode, small symbol"
-			(at 181.61 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cda9beb4-e5ee-4eeb-a042-811e1f4fd323")
-		)
-		(pin "1"
-			(uuid "e7b816b2-b682-4ced-9590-8c7b7988ae81")
-		)
-		(instances
-			(project "Power_Relay_Pico"
-				(path "/566cf8d0-193a-44fb-9475-e4a407004a06/5213e1fa-cae3-4eca-b710-bc820090e61b"
-					(reference "D302")
 					(unit 1)
 				)
 			)
@@ -9355,6 +8997,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 212.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "--"
 			(at 212.09 41.91 0)
 			(effects
 				(font
@@ -9564,6 +9215,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 240.03 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7916451c-0bca-4b80-9a1e-c16afa81a3fa")
 		)
@@ -9624,6 +9284,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 260.35 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "--"
 			(at 260.35 67.31 0)
 			(effects
 				(font
@@ -9879,6 +9548,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "--"
+			(at 212.09 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bf310622-d754-48fe-a36e-0f83b3925a88")
 		)
@@ -9939,6 +9617,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 212.09 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "--"
 			(at 212.09 29.21 0)
 			(effects
 				(font
@@ -10081,6 +9768,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "--"
+			(at 260.35 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1d1e2ef5-98b5-4e30-b634-028048610899")
 		)
@@ -10208,6 +9904,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 191.77 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
 			(at 191.77 54.61 0)
 			(effects
 				(font
@@ -10718,6 +10423,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C14663"
+			(at 231.14 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8c76c0f7-6264-49b4-9473-b2dd544195bf")
 		)
@@ -10778,6 +10492,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 212.09 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "--"
 			(at 212.09 67.31 0)
 			(effects
 				(font
@@ -10996,122 +10719,52 @@
 			)
 		)
 		(pin "2"
-			(uuid "440c1fc1-24b8-4a9f-aaf9-5ee80c32b14f")
+			(uuid "440c1fc1-24b8-4a9f-aaf9-5ee80c32b153")
 		)
 		(pin "14"
-			(uuid "f9fa067c-9eb3-4697-892c-fb48064c1fb9")
+			(uuid "f9fa067c-9eb3-4697-892c-fb48064c1fbd")
 		)
 		(pin "7"
-			(uuid "1b9bbc29-51b5-4e60-98f4-ee60f3011655")
+			(uuid "1b9bbc29-51b5-4e60-98f4-ee60f3011659")
 		)
 		(pin "1"
-			(uuid "2e6222d6-272d-4fb5-aac7-1eef3b83dc7a")
+			(uuid "2e6222d6-272d-4fb5-aac7-1eef3b83dc7e")
 		)
 		(pin "12"
-			(uuid "6ef5c8d3-4f52-41b5-be5d-868425d81910")
+			(uuid "6ef5c8d3-4f52-41b5-be5d-868425d81914")
 		)
 		(pin "13"
-			(uuid "de43a8b4-b818-4748-8ca8-1efd79444c6d")
+			(uuid "de43a8b4-b818-4748-8ca8-1efd79444c71")
 		)
 		(pin "10"
-			(uuid "f53bb8ca-ff20-4eda-82f1-1c02a7e55bdb")
+			(uuid "f53bb8ca-ff20-4eda-82f1-1c02a7e55bdf")
 		)
 		(pin "11"
-			(uuid "c9de3c76-a4f8-483e-86dc-64940e62a8f4")
+			(uuid "c9de3c76-a4f8-483e-86dc-64940e62a8f8")
 		)
 		(pin "5"
-			(uuid "939ee049-5b77-4b8c-8dfa-1f6e864369b5")
+			(uuid "939ee049-5b77-4b8c-8dfa-1f6e864369b9")
 		)
 		(pin "6"
-			(uuid "293dc136-1a72-4f1f-871f-5921346e0d65")
+			(uuid "293dc136-1a72-4f1f-871f-5921346e0d69")
 		)
 		(pin "3"
-			(uuid "44bbe9cc-fc26-4601-85b0-9751c161adb7")
+			(uuid "44bbe9cc-fc26-4601-85b0-9751c161adbb")
 		)
 		(pin "4"
-			(uuid "3fc1aaa1-affa-4134-ab7d-eb28d1606a2d")
+			(uuid "3fc1aaa1-affa-4134-ab7d-eb28d1606a31")
 		)
 		(pin "8"
-			(uuid "ba2a585b-3e45-450b-8f34-5ca308c9656c")
+			(uuid "ba2a585b-3e45-450b-8f34-5ca308c96570")
 		)
 		(pin "9"
-			(uuid "da05230d-d022-416b-aa50-dc8604c64953")
+			(uuid "da05230d-d022-416b-aa50-dc8604c64957")
 		)
 		(instances
 			(project "Power_Relay_Pico"
 				(path "/566cf8d0-193a-44fb-9475-e4a407004a06/5213e1fa-cae3-4eca-b710-bc820090e61b"
 					(reference "U301")
 					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED_Small")
-		(at 196.85 85.09 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "894c31a0-748b-431a-8bfb-4f92348cda52")
-		(property "Reference" "D304"
-			(at 199.39 83.312 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LED_Small"
-			(at 194.31 83.7566 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D3.0mm"
-			(at 196.85 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 196.85 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode, small symbol"
-			(at 196.85 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e5aa7c48-3b3c-410c-b8f0-3c2829dc41d9")
-		)
-		(pin "1"
-			(uuid "1984ca40-e74d-43de-a867-5373554f850a")
-		)
-		(instances
-			(project "Power_Relay_Pico"
-				(path "/566cf8d0-193a-44fb-9475-e4a407004a06/5213e1fa-cae3-4eca-b710-bc820090e61b"
-					(reference "D304")
-					(unit 1)
 				)
 			)
 		)
@@ -11718,46 +11371,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "440c1fc1-24b8-4a9f-aaf9-5ee80c32b14f")
+			(uuid "440c1fc1-24b8-4a9f-aaf9-5ee80c32b154")
 		)
 		(pin "14"
-			(uuid "f9fa067c-9eb3-4697-892c-fb48064c1fb9")
+			(uuid "f9fa067c-9eb3-4697-892c-fb48064c1fbe")
 		)
 		(pin "7"
-			(uuid "1b9bbc29-51b5-4e60-98f4-ee60f3011655")
+			(uuid "1b9bbc29-51b5-4e60-98f4-ee60f301165a")
 		)
 		(pin "1"
-			(uuid "2e6222d6-272d-4fb5-aac7-1eef3b83dc7a")
+			(uuid "2e6222d6-272d-4fb5-aac7-1eef3b83dc7f")
 		)
 		(pin "12"
-			(uuid "6ef5c8d3-4f52-41b5-be5d-868425d81910")
+			(uuid "6ef5c8d3-4f52-41b5-be5d-868425d81915")
 		)
 		(pin "13"
-			(uuid "de43a8b4-b818-4748-8ca8-1efd79444c6d")
+			(uuid "de43a8b4-b818-4748-8ca8-1efd79444c72")
 		)
 		(pin "10"
-			(uuid "f53bb8ca-ff20-4eda-82f1-1c02a7e55bdb")
+			(uuid "f53bb8ca-ff20-4eda-82f1-1c02a7e55be0")
 		)
 		(pin "11"
-			(uuid "c9de3c76-a4f8-483e-86dc-64940e62a8f4")
+			(uuid "c9de3c76-a4f8-483e-86dc-64940e62a8f9")
 		)
 		(pin "5"
-			(uuid "939ee049-5b77-4b8c-8dfa-1f6e864369b5")
+			(uuid "939ee049-5b77-4b8c-8dfa-1f6e864369ba")
 		)
 		(pin "6"
-			(uuid "293dc136-1a72-4f1f-871f-5921346e0d65")
+			(uuid "293dc136-1a72-4f1f-871f-5921346e0d6a")
 		)
 		(pin "3"
-			(uuid "44bbe9cc-fc26-4601-85b0-9751c161adb7")
+			(uuid "44bbe9cc-fc26-4601-85b0-9751c161adbc")
 		)
 		(pin "4"
-			(uuid "3fc1aaa1-affa-4134-ab7d-eb28d1606a2d")
+			(uuid "3fc1aaa1-affa-4134-ab7d-eb28d1606a32")
 		)
 		(pin "8"
-			(uuid "ba2a585b-3e45-450b-8f34-5ca308c9656c")
+			(uuid "ba2a585b-3e45-450b-8f34-5ca308c96571")
 		)
 		(pin "9"
-			(uuid "da05230d-d022-416b-aa50-dc8604c64953")
+			(uuid "da05230d-d022-416b-aa50-dc8604c64958")
 		)
 		(instances
 			(project "Power_Relay_Pico"
@@ -12005,6 +11658,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C21190"
+			(at 246.38 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3a729f72-6057-487a-91ef-405031a3b638")
 		)
@@ -12134,6 +11796,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 222.25 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 222.25 93.98 0)
 			(effects
 				(font
@@ -12410,6 +12081,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 240.03 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c46a657a-b8ab-4154-ad7e-94b92ec9d433")
 		)
@@ -12470,6 +12150,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 240.03 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
 			(at 240.03 67.31 0)
 			(effects
 				(font
@@ -12855,6 +12544,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C21190"
+			(at 246.38 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7792ce82-6f42-484e-9658-57c88531fca8")
 		)
@@ -13190,6 +12888,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "--"
+			(at 151.13 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "11"
 			(uuid "d948671c-9f24-4df2-b353-7371d9f65b39")
 		)
@@ -13459,6 +13166,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C21190"
+			(at 246.38 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a98d26be-07a4-402d-8bb6-3dc96aa676d6")
 		)
@@ -13586,6 +13302,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 260.35 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "--"
 			(at 260.35 41.91 0)
 			(effects
 				(font
@@ -14246,6 +13971,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 191.77 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "28415875-4464-46c0-8732-1563c214ebd0")
 		)
@@ -14383,6 +14117,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C14663"
+			(at 213.36 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "03cfd103-ba12-450f-a4bd-78b626f4083d")
 		)
@@ -14393,72 +14136,6 @@
 			(project "Power_Relay_Pico"
 				(path "/566cf8d0-193a-44fb-9475-e4a407004a06/5213e1fa-cae3-4eca-b710-bc820090e61b"
 					(reference "C302")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 173.99 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ee10d983-bc78-49cb-af75-0d8b661ab39d")
-		(property "Reference" "#PWR0332"
-			(at 173.99 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 173.99 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 173.99 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "97e82af2-656f-4fcb-9c1f-216b051540a8")
-		)
-		(instances
-			(project "Power_Relay_Pico"
-				(path "/566cf8d0-193a-44fb-9475-e4a407004a06/5213e1fa-cae3-4eca-b710-bc820090e61b"
-					(reference "#PWR0332")
 					(unit 1)
 				)
 			)
@@ -14511,6 +14188,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 198.12 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
 			(at 198.12 25.4 0)
 			(effects
 				(font
@@ -14579,6 +14265,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 191.77 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
 			(at 191.77 67.31 0)
 			(effects
 				(font
@@ -14656,6 +14351,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 66.04 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1a0a6ffa-6bb1-4500-b340-87147e0880a4")
 		)
@@ -14718,6 +14422,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 246.38 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
 			(at 246.38 50.8 0)
 			(effects
 				(font
@@ -14862,6 +14575,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C21190"
+			(at 198.12 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c4a8e07a-c5c3-4281-84d7-a8f68d742fa2")
 		)
@@ -14997,6 +14719,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 58.42 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b260c5bd-45a5-4319-9b8b-eb01d7b9fbdc")
 		)
@@ -15074,46 +14805,46 @@
 			)
 		)
 		(pin "2"
-			(uuid "440c1fc1-24b8-4a9f-aaf9-5ee80c32b14f")
+			(uuid "440c1fc1-24b8-4a9f-aaf9-5ee80c32b155")
 		)
 		(pin "14"
-			(uuid "f9fa067c-9eb3-4697-892c-fb48064c1fb9")
+			(uuid "f9fa067c-9eb3-4697-892c-fb48064c1fbf")
 		)
 		(pin "7"
-			(uuid "1b9bbc29-51b5-4e60-98f4-ee60f3011655")
+			(uuid "1b9bbc29-51b5-4e60-98f4-ee60f301165b")
 		)
 		(pin "1"
-			(uuid "2e6222d6-272d-4fb5-aac7-1eef3b83dc7a")
+			(uuid "2e6222d6-272d-4fb5-aac7-1eef3b83dc80")
 		)
 		(pin "12"
-			(uuid "6ef5c8d3-4f52-41b5-be5d-868425d81910")
+			(uuid "6ef5c8d3-4f52-41b5-be5d-868425d81916")
 		)
 		(pin "13"
-			(uuid "de43a8b4-b818-4748-8ca8-1efd79444c6d")
+			(uuid "de43a8b4-b818-4748-8ca8-1efd79444c73")
 		)
 		(pin "10"
-			(uuid "f53bb8ca-ff20-4eda-82f1-1c02a7e55bdb")
+			(uuid "f53bb8ca-ff20-4eda-82f1-1c02a7e55be1")
 		)
 		(pin "11"
-			(uuid "c9de3c76-a4f8-483e-86dc-64940e62a8f4")
+			(uuid "c9de3c76-a4f8-483e-86dc-64940e62a8fa")
 		)
 		(pin "5"
-			(uuid "939ee049-5b77-4b8c-8dfa-1f6e864369b5")
+			(uuid "939ee049-5b77-4b8c-8dfa-1f6e864369bb")
 		)
 		(pin "6"
-			(uuid "293dc136-1a72-4f1f-871f-5921346e0d65")
+			(uuid "293dc136-1a72-4f1f-871f-5921346e0d6b")
 		)
 		(pin "3"
-			(uuid "44bbe9cc-fc26-4601-85b0-9751c161adb7")
+			(uuid "44bbe9cc-fc26-4601-85b0-9751c161adbd")
 		)
 		(pin "4"
-			(uuid "3fc1aaa1-affa-4134-ab7d-eb28d1606a2d")
+			(uuid "3fc1aaa1-affa-4134-ab7d-eb28d1606a33")
 		)
 		(pin "8"
-			(uuid "ba2a585b-3e45-450b-8f34-5ca308c9656c")
+			(uuid "ba2a585b-3e45-450b-8f34-5ca308c96572")
 		)
 		(pin "9"
-			(uuid "da05230d-d022-416b-aa50-dc8604c64953")
+			(uuid "da05230d-d022-416b-aa50-dc8604c64959")
 		)
 		(instances
 			(project "Power_Relay_Pico"
@@ -15191,76 +14922,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_Small")
-		(at 173.99 85.09 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fbc8da61-780c-49e0-a4ab-9e6c7e0db8e3")
-		(property "Reference" "D301"
-			(at 176.53 83.312 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LED_Small"
-			(at 171.45 83.7566 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D3.0mm"
-			(at 173.99 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 173.99 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode, small symbol"
-			(at 173.99 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "52173d2e-601b-47af-a65b-d773dd6e1ab5")
-		)
-		(pin "1"
-			(uuid "afb38c2b-ca52-4554-ad2b-e2ecaa09315f")
-		)
-		(instances
-			(project "Power_Relay_Pico"
-				(path "/566cf8d0-193a-44fb-9475-e4a407004a06/5213e1fa-cae3-4eca-b710-bc820090e61b"
-					(reference "D301")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 198.12 50.8 0)
 		(unit 1)
@@ -15307,6 +14968,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 198.12 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
 			(at 198.12 50.8 0)
 			(effects
 				(font
@@ -15452,6 +15122,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C14663"
+			(at 248.92 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "cee8b23d-dca6-4f05-939b-0a407afcd9b0")
 		)
@@ -15462,76 +15141,6 @@
 			(project "Power_Relay_Pico"
 				(path "/566cf8d0-193a-44fb-9475-e4a407004a06/5213e1fa-cae3-4eca-b710-bc820090e61b"
 					(reference "C306")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED_Small")
-		(at 189.23 85.09 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ff37009a-564d-41e7-b67f-6e0fd93bbedb")
-		(property "Reference" "D303"
-			(at 192.024 83.312 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LED_Small"
-			(at 186.69 83.7566 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D3.0mm"
-			(at 189.23 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 189.23 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode, small symbol"
-			(at 189.23 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8ffba67c-09a6-4628-b9db-bbd2ada25636")
-		)
-		(pin "1"
-			(uuid "ee69b4eb-43d3-4a44-b57a-d187b5ec39d7")
-		)
-		(instances
-			(project "Power_Relay_Pico"
-				(path "/566cf8d0-193a-44fb-9475-e4a407004a06/5213e1fa-cae3-4eca-b710-bc820090e61b"
-					(reference "D303")
 					(unit 1)
 				)
 			)

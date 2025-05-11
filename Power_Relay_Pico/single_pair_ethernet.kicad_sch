@@ -1974,7 +1974,10 @@
 				)
 			)
 		)
-		(symbol "NCN26010XMNTXG:NCN26010XMNTXG"
+		(symbol "NCN26010XMNTXG_Modified:NCN26010XMNTXG"
+			(pin_names
+				(offset 0.762)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1984,7 +1987,7 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left)
 				)
 			)
 			(property "Value" "NCN26010XMNTXG"
@@ -1993,120 +1996,110 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left)
 				)
 			)
 			(property "Footprint" "NCN26010XMNTXG"
-				(at 31.75 -84.76 0)
+				(at 31.75 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left)
 					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NCN26010-D.PDF"
-				(at 31.75 -184.76 0)
+				(at 31.75 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left)
 					(hide yes)
 				)
 			)
 			(property "Description" "Enhanced Noise Immunity Mode: - ENI extends the noise immunity to values well above the IEEE T1S standard - Allows the NCN26010 to withstand worst-case DPI and BCI immunity tests - Significantly improves the network reach when enabled, almost 2X better than competition - Unique to NCN26010; Lowest Line Pin Capacitance: - Best-in-class line pin capacitance allows for the highest number of nodes per segment. - The NCN26010 supports up to 40 nodes on a 25-meter segment, well above the IEEE minimum standard - L"
-				(at 0 0 0)
+				(at 31.75 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
 			(property "Height" "1"
-				(at 31.75 -384.76 0)
+				(at 31.75 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left)
 					(hide yes)
 				)
 			)
 			(property "Manufacturer_Name" "onsemi"
-				(at 31.75 -484.76 0)
+				(at 31.75 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left)
 					(hide yes)
 				)
 			)
 			(property "Manufacturer_Part_Number" "NCN26010XMNTXG"
-				(at 31.75 -584.76 0)
+				(at 31.75 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left)
 					(hide yes)
 				)
 			)
 			(property "Mouser Part Number" "863-NCN26010XMNTXG"
-				(at 31.75 -684.76 0)
+				(at 31.75 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left)
 					(hide yes)
 				)
 			)
 			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/NCN26010XMNTXG?qs=vvQtp7zwQdP81A3PyQkyFA%3D%3D"
-				(at 31.75 -784.76 0)
+				(at 31.75 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left)
 					(hide yes)
 				)
 			)
 			(property "Arrow Part Number" ""
-				(at 31.75 -884.76 0)
+				(at 31.75 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left)
 					(hide yes)
 				)
 			)
 			(property "Arrow Price/Stock" ""
-				(at 31.75 -984.76 0)
+				(at 31.75 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(symbol "NCN26010XMNTXG_1_1"
-				(rectangle
-					(start 5.08 12.7)
-					(end 30.48 -30.48)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
+			(symbol "NCN26010XMNTXG_0_0"
 				(pin passive line
 					(at 0 0 0)
 					(length 5.08)
@@ -2699,6 +2692,20 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(symbol "NCN26010XMNTXG_1_1"
+				(polyline
+					(pts
+						(xy 5.08 12.7) (xy 30.48 12.7) (xy 30.48 -30.48) (xy 5.08 -30.48) (xy 5.08 12.7)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type background)
 					)
 				)
 			)
@@ -4902,6 +4909,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C21189"
+			(at 86.36 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b2ba7946-0d30-44f2-9b21-3985761b88e4")
 		)
@@ -5040,6 +5056,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 86.36 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21189"
 			(at 86.36 153.67 0)
 			(effects
 				(font
@@ -5314,7 +5339,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 220.98 49.53 90)
 			(effects
 				(font
@@ -5333,6 +5358,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol"
+			(at 220.98 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2297"
 			(at 220.98 49.53 0)
 			(effects
 				(font
@@ -5468,6 +5502,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 62.23 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "--"
 			(at 62.23 144.78 0)
 			(effects
 				(font
@@ -5816,7 +5859,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 234.95 49.53 90)
 			(effects
 				(font
@@ -5835,6 +5878,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol"
+			(at 234.95 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2297"
 			(at 234.95 49.53 0)
 			(effects
 				(font
@@ -6049,6 +6101,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 102.87 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "--"
 			(at 102.87 144.78 0)
 			(effects
 				(font
@@ -6607,7 +6668,7 @@
 		)
 	)
 	(symbol
-		(lib_id "NCN26010XMNTXG:NCN26010XMNTXG")
+		(lib_id "NCN26010XMNTXG_Modified:NCN26010XMNTXG")
 		(at 81.28 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6633,101 +6694,111 @@
 			)
 		)
 		(property "Footprint" "NCN26010XMNTXG"
-			(at 113.03 146.99 0)
+			(at 113.03 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
+				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NCN26010-D.PDF"
-			(at 113.03 246.99 0)
+			(at 113.03 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
+				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Description" "Enhanced Noise Immunity Mode: - ENI extends the noise immunity to values well above the IEEE T1S standard - Allows the NCN26010 to withstand worst-case DPI and BCI immunity tests - Significantly improves the network reach when enabled, almost 2X better than competition - Unique to NCN26010; Lowest Line Pin Capacitance: - Best-in-class line pin capacitance allows for the highest number of nodes per segment. - The NCN26010 supports up to 40 nodes on a 25-meter segment, well above the IEEE minimum standard - L"
+			(at 113.03 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Height" "1"
+			(at 113.03 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "onsemi"
+			(at 113.03 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "NCN26010XMNTXG"
+			(at 113.03 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "863-NCN26010XMNTXG"
+			(at 113.03 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/NCN26010XMNTXG?qs=vvQtp7zwQdP81A3PyQkyFA%3D%3D"
+			(at 113.03 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 113.03 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 113.03 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5209312"
 			(at 81.28 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1"
-			(at 113.03 446.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "onsemi"
-			(at 113.03 546.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "NCN26010XMNTXG"
-			(at 113.03 646.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "863-NCN26010XMNTXG"
-			(at 113.03 746.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/NCN26010XMNTXG?qs=vvQtp7zwQdP81A3PyQkyFA%3D%3D"
-			(at 113.03 846.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 113.03 946.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 113.03 1046.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
 				(hide yes)
 			)
 		)
@@ -6884,6 +6955,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 62.23 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "--"
 			(at 62.23 134.62 0)
 			(effects
 				(font
@@ -7183,6 +7263,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "--"
+			(at 102.87 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cfbfd786-707d-49f9-abdf-efbaa80f0b2e")
 		)
@@ -7380,6 +7469,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "--"
+			(at 53.34 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c4800431-a5c3-4f71-8431-4b2d6b1cae36")
 		)
@@ -7423,7 +7521,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 47.752 67.31 90)
 			(effects
 				(font
@@ -7442,6 +7540,15 @@
 			)
 		)
 		(property "Description" "Ferrite bead, small symbol"
+			(at 49.53 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1017"
 			(at 49.53 67.31 0)
 			(effects
 				(font
@@ -7583,6 +7690,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C21189"
+			(at 25.4 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "aaa81b41-ffd2-40eb-b27f-38c8db3ceadb")
 		)
@@ -7716,6 +7832,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "--"
+			(at 38.1 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "78a4dae7-5c9f-46c5-9df0-6bc861e3c39f")
 		)
@@ -7776,6 +7901,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 265.43 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "--"
 			(at 265.43 45.72 0)
 			(effects
 				(font
@@ -8752,6 +8886,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C21189"
+			(at 55.88 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3d2c5bae-a5c6-42bb-ae38-fc95fe017516")
 		)
@@ -9032,6 +9175,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "--"
+			(at 151.13 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "11a48655-2190-494f-a234-de62ed2a33f2")
 		)
@@ -9099,7 +9251,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 207.01 49.53 90)
 			(effects
 				(font
@@ -9118,6 +9270,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol"
+			(at 207.01 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2297"
 			(at 207.01 49.53 0)
 			(effects
 				(font
@@ -9757,6 +9918,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 116.84 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "--"
 			(at 116.84 72.39 0)
 			(effects
 				(font
