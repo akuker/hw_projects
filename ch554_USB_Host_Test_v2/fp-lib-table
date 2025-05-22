@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ch554_lib")(type "KiCad")(uri "${KIPRJMOD}/ch554_lib.pretty")(options "")(descr ""))
+  (lib (name "SamacSys_Parts")(type "KiCad")(uri "${KIPRJMOD}/SamacSys_Parts.pretty")(options "")(descr ""))
+)
