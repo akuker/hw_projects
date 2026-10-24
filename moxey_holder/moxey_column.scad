@@ -18,7 +18,7 @@
 bay_count = 3;                 // 3 for the test print; 4 / 6 / 8 / 10 ...
 
 // Tin geometry (measured, carried over from moxey_holder.scad)
-tin_lid_width    = 63;
+tin_lid_width    = 62.25; // measured 63, but test print 1 channel was ~0.75mm too wide: trim 0.75
 tin_lid_length   = 100;
 tin_total_height = 20;
 tin_seam_z       = 10;
@@ -26,7 +26,7 @@ hinge_protrusion = 0.75;
 
 // Fit clearances (from print tests v1/v2)
 width_clearance     = 0.6;
-height_clearance    = 1.0;
+height_clearance    = 2.0;   // test print 1 (1.0) was too short: +1mm
 hinge_relief_margin = 0.5;
 hinge_notch_drop    = 1.0;
 
@@ -73,7 +73,7 @@ lat_y1    = 102;               // ... and the backstop
 
 // Alignment screw: M3x12 along X, from inside the bay (lower band, beside the
 // tin's narrower base) through this column's +X wall into the neighbour's -X wall.
-screw_y        = 56;           // mid-depth
+screw_y        = 20;           // near the front so it can be reached (test print 1: was 56)
 screw_z        = 9;            // height above the bay floor (clear of the floor dovetails)
 screw_head_d   = 6.4;
 screw_head_depth = 3;
@@ -183,16 +183,17 @@ module stadium(w, h) {
     hull() for (sx = [-1, 1]) translate([sx * (w - h) / 2, 0]) circle(d = h);
 }
 
-// Windows through both side walls, two per bay with a rib between them where
-// the alignment screw passes through. Z range sits above the floor dovetails.
+// One window per bay through both side walls, starting past the alignment
+// screw (win_gap leaves a rib around it). Z range sits above the floor dovetails.
 win_gap = 16;
 module side_windows() {
-    len_y = (depth - 2 * win_margin_y - win_gap) / 2;
-    for (i = [0 : bay_count - 1], sy = [-1, 1])
-        translate([-column_pitch / 2 - 0.1, screw_y + sy * (win_gap / 2 + len_y / 2),
+    y0 = screw_y + win_gap / 2;
+    y1 = depth - win_margin_y;
+    for (i = [0 : bay_count - 1])
+        translate([-column_pitch / 2 - 0.1, (y0 + y1) / 2,
                    wall_floor + i * (chan_h + wall_floor) + chan_h / 2 + 3])
             rotate([90, 0, 90])
-                linear_extrude(height = column_pitch + 0.2) stadium(len_y, win_h);
+                linear_extrude(height = column_pitch + 0.2) stadium(y1 - y0, win_h);
 }
 
 // Two stadium slots per bay through the back plate, leaving the centre rib solid
