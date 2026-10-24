@@ -16,7 +16,7 @@
 // Configuration
 // ---------------------------------------------------------------------------
 
-bay_count = 3;                 // 3 for the test print; 4 / 6 / 8 / 10 ...
+bay_count = 4;                 // 3 was the test print; 4 / 6 / 8 / 10 ...
 
 // Tin geometry (measured, carried over from moxey_holder.scad)
 tin_lid_width    = 62.25; // measured 63, but test print 1 channel was ~0.75mm too wide: trim 0.75
@@ -80,7 +80,10 @@ pin_y       = 12;              // front of the column, clear of the side windows
 pin_bore_d  = 5.0;             // bore diameter (prints ~0.2 small)
 pin_d       = 4.4;             // rod diameter, 0.6 loose in the bore
 pin_head_d  = 8;
-pin_head_h  = 2;
+pin_head_h  = 1.6;
+pin_recess_d = 8.6;            // head pocket in the TOP face, straddling the seam
+pin_recess_h = pin_head_h + 0.1; // head sits 0.1 below flush; 3 - 1.7 = 1.3mm skin left
+// The head goes on top: gravity keeps the pin seated. (A bottom head would let it drop out.)
 pin_end_gap = 0.4;             // rod stops this far above the column bottom
 
 $fn = 48;
@@ -149,21 +152,28 @@ module pin_bores() {
     for (sx = [-1, 1])
         translate([sx * column_pitch / 2, pin_y, -0.5])
             cylinder(d = pin_bore_d, h = col_h + 1);
+    // head recess, top face only
+    for (sx = [-1, 1])
+        translate([sx * column_pitch / 2, pin_y, col_h - pin_recess_h])
+            cylinder(d = pin_recess_d, h = pin_recess_h + 0.5);
 }
+
+// Rod length: from the recess floor down to pin_end_gap above the column bottom.
+function pin_len() = col_h - pin_recess_h - pin_end_gap;
 
 // The locking pin in PRINT orientation: head on the bed, rod pointing up.
 module pin_print() {
     cylinder(d = pin_head_d, h = pin_head_h);
     translate([0, 0, pin_head_h - 0.01])
-        cylinder(d = pin_d, h = col_h - pin_end_gap + 0.01);
+        cylinder(d = pin_d, h = pin_len() + 0.01);
     // small lead-in chamfer so the tip finds the bore
-    translate([0, 0, pin_head_h + col_h - pin_end_gap - 0.01])
+    translate([0, 0, pin_head_h + pin_len() - 0.01])
         cylinder(d1 = pin_d, d2 = pin_d - 1.2, h = 0.6);
 }
 
 // Pin installed in the seam between this column and its +X neighbour.
 module pin_installed() {
-    translate([column_pitch / 2, pin_y, col_h + pin_head_h]) mirror([0, 0, 1]) pin_print();
+    translate([column_pitch / 2, pin_y, col_h - pin_recess_h + pin_head_h]) mirror([0, 0, 1]) pin_print();
 }
 
 // Keyhole pocket cut into the BACK face (y = depth). Head enters the big
