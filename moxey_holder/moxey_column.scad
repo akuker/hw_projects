@@ -6,8 +6,9 @@
 //
 // One column = N bays stacked in Z. Columns join side by side: two dovetails on the
 // +X face (tongues) mate the -X face (slots) of the next column. They run along Y
-// and flare in Z, so the columns slide together front-to-back, and an M3 screw
-// across the seam stops them sliding apart. Print on its BACK (mode "print"):
+// and flare in Z, so the columns slide together front-to-back, and a separate
+// locking pin dropped in from the top (mode "pin_print") through a vertical bore
+// that straddles the seam stops them sliding apart. Print on its BACK (mode "print"):
 // Y becomes vertical, so the bays, dovetails and windows need no support.
 // Column pitch = 16" / 5 so every 5th column lands on a stud.
 
@@ -71,15 +72,16 @@ lat_x_max = 29.3;              // lattice stays inside this half-width
 lat_y0    = 17;                // keep the front lip (and scoop) solid
 lat_y1    = 102;               // ... and the backstop
 
-// Alignment screw: M3x12 along X, from inside the bay (lower band, beside the
-// tin's narrower base) through this column's +X wall into the neighbour's -X wall.
-screw_y        = 20;           // near the front so it can be reached (test print 1: was 56)
-screw_z        = 9;            // height above the bay floor (clear of the floor dovetails)
-screw_head_d   = 6.4;
-screw_head_depth = 3;
-screw_clear_d  = 3.4;
-screw_pilot_d  = 2.8;
-screw_pilot_len = 7.5;         // depth into the neighbour's wall (ends 1.3mm short of its channel)
+// Locking pin: a vertical rod dropped in from the top (or bottom) through a bore
+// that straddles the seam — half the bore is in each column's side wall. It blocks
+// the only direction the dovetails leave free (sliding front-to-back). The pin is
+// a separate printed part: a headed rod, printed standing on its head.
+pin_y       = 12;              // front of the column, clear of the side windows
+pin_bore_d  = 5.0;             // bore diameter (prints ~0.2 small)
+pin_d       = 4.4;             // rod diameter, 0.6 loose in the bore
+pin_head_d  = 8;
+pin_head_h  = 2;
+pin_end_gap = 0.4;             // rod stops this far above the column bottom
 
 $fn = 48;
 
@@ -97,6 +99,7 @@ depth    = chan_d + back_plate;
 col_h    = bay_count * chan_h + (bay_count + 1) * wall_floor;
 
 assert(bay_count >= 2, "bay_count must be >= 2");
+assert(pin_bore_d - pin_d >= 0.4, "pin too tight in its bore");
 assert((column_pitch - unit_w) / 2 >= dt_depth + dt_clear + 1.5,
        "side wall too thin for dovetail");
 
@@ -140,25 +143,27 @@ module slots() {
         along_y(depth + 1) for (z = dt_zs()) dovetail_profile(z, dt_clear);
 }
 
-// Screw positions: lowest and highest bay.
-function screw_zs() = [wall_floor + screw_z,
-                       wall_floor + (bay_count - 1) * (chan_h + wall_floor) + screw_z];
+// Pin bore: full height, centred on the seam. Each column carries the half in
+// its +X face and the half in its -X face, so one bore per joint.
+module pin_bores() {
+    for (sx = [-1, 1])
+        translate([sx * column_pitch / 2, pin_y, -0.5])
+            cylinder(d = pin_bore_d, h = col_h + 1);
+}
 
-module alignment_screws() {
-    seam = column_pitch / 2;
-    for (z = screw_zs()) translate([0, screw_y, z]) rotate([0, 90, 0]) {
-        // +X side: counterbore from the channel wall, clearance hole to the seam,
-        // then pilot into the neighbour's wall
-        translate([0, 0, chan_w / 2 - 0.1])
-            cylinder(d = screw_head_d, h = screw_head_depth + 0.1);
-        translate([0, 0, chan_w / 2])
-            cylinder(d = screw_clear_d, h = seam - chan_w / 2 + 0.01);
-        translate([0, 0, seam])
-            cylinder(d = screw_pilot_d, h = screw_pilot_len);
-        // -X side: receiving pilot hole for the previous column's screw
-        translate([0, 0, -seam - 0.01])
-            cylinder(d = screw_pilot_d, h = screw_pilot_len + 0.01);
-    }
+// The locking pin in PRINT orientation: head on the bed, rod pointing up.
+module pin_print() {
+    cylinder(d = pin_head_d, h = pin_head_h);
+    translate([0, 0, pin_head_h - 0.01])
+        cylinder(d = pin_d, h = col_h - pin_end_gap + 0.01);
+    // small lead-in chamfer so the tip finds the bore
+    translate([0, 0, pin_head_h + col_h - pin_end_gap - 0.01])
+        cylinder(d1 = pin_d, d2 = pin_d - 1.2, h = 0.6);
+}
+
+// Pin installed in the seam between this column and its +X neighbour.
+module pin_installed() {
+    translate([column_pitch / 2, pin_y, col_h + pin_head_h]) mirror([0, 0, 1]) pin_print();
 }
 
 // Keyhole pocket cut into the BACK face (y = depth). Head enters the big
@@ -183,11 +188,12 @@ module stadium(w, h) {
     hull() for (sx = [-1, 1]) translate([sx * (w - h) / 2, 0]) circle(d = h);
 }
 
-// One window per bay through both side walls, starting past the alignment
-// screw (win_gap leaves a rib around it). Z range sits above the floor dovetails.
-win_gap = 16;
+// One window per bay through both side walls, starting past the pin bore (the
+// bore's edge is at pin_y + pin_bore_d/2; win_pin_rib is the wall left beside it).
+// Z range sits above the floor dovetails.
+win_pin_rib = 6;
 module side_windows() {
-    y0 = screw_y + win_gap / 2;
+    y0 = pin_y + pin_bore_d / 2 + win_pin_rib;
     y1 = depth - win_margin_y;
     for (i = [0 : bay_count - 1])
         translate([-column_pitch / 2 - 0.1, (y0 + y1) / 2,
@@ -249,7 +255,7 @@ module column() {
         side_windows();
         floor_lattice();
         back_slots();
-        alignment_screws();
+        pin_bores();
         keyhole(kh_z_margin);
         keyhole(col_h - kh_z_margin - kh_slot_len);
         if (scoop_r > 0)
@@ -290,7 +296,7 @@ module array_preview(n = 3) {
 
 mode = "column";
 // "print" = column rotated onto its back (Y up) for slicing
-// "column" | "array" | "with_tins" | "section_z" | "section_screw" | "section_x" | "check_tins" | "check_joint"
+// "column" | "array" | "with_tins" | "section_z" | "section_pin" | "pin_print" | "check_pin" | "section_x" | "check_tins" | "check_joint"
 
 if (mode == "column") column();
 else if (mode == "print") translate([0, 0, depth]) rotate([-90, 0, 0]) column();
@@ -311,9 +317,14 @@ else if (mode == "check_tins") {   // should be EMPTY: tins vs column
 }
 else if (mode == "check_joint")    // should be EMPTY: neighbouring columns vs each other
     intersection() { column(); translate([column_pitch, 0, 0]) column(); }
-else if (mode == "section_screw")
-    difference() { array_preview(2);
-        translate([-200, -50, wall_floor + screw_z]) cube([600, 400, 400]); }
+else if (mode == "pin_print") pin_print();
+else if (mode == "check_pin") {    // should be EMPTY: installed pin vs both columns
+    intersection() { union() { column(); translate([column_pitch, 0, 0]) column(); }
+                     pin_installed(); }
+}
+else if (mode == "section_pin")    // cut across the pin, pin installed
+    difference() { union() { array_preview(2); pin_installed(); }
+        translate([-200, pin_y, -50]) cube([600, 400, 600]); }
 else if (mode == "section_x")
     difference() { column();
         translate([0, -50, -50]) cube([200, 400, 600]); }
