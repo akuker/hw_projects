@@ -7,7 +7,7 @@
 // One column = N bays stacked in Z. Columns join side by side: two dovetails on the
 // +X face (tongues) mate the -X face (slots) of the next column. They run along Y
 // and flare in Z, so the columns slide together front-to-back, and a separate
-// locking pin dropped in from the top (mode "pin_print") through a vertical bore
+// locking pin dropped in from the top (mode "pin_print", prints lying flat) through a vertical bore
 // that straddles the seam stops them sliding apart. Print on its BACK (mode "print"):
 // Y becomes vertical, so the bays, dovetails and windows need no support.
 // Column pitch = 16" / 5 so every 5th column lands on a stud.
@@ -72,19 +72,22 @@ lat_x_max = 29.3;              // lattice stays inside this half-width
 lat_y0    = 17;                // keep the front lip (and scoop) solid
 lat_y1    = 102;               // ... and the backstop
 
-// Locking pin: a vertical rod dropped in from the top (or bottom) through a bore
-// that straddles the seam — half the bore is in each column's side wall. It blocks
-// the only direction the dovetails leave free (sliding front-to-back). The pin is
-// a separate printed part: a headed rod, printed standing on its head.
-pin_y       = 12;              // front of the column, clear of the side windows
-pin_bore_d  = 5.0;             // bore diameter (prints ~0.2 small)
-pin_d       = 4.4;             // rod diameter, 0.6 loose in the bore
-pin_head_d  = 8;
-pin_head_h  = 1.6;
-pin_recess_d = 8.6;            // head pocket in the TOP face, straddling the seam
+// Locking pin: a vertical rod dropped in from the top through a bore that
+// straddles the seam — half the bore is in each column's side wall. It blocks the
+// only direction the dovetails leave free (sliding front-to-back). The pin is a
+// separate printed part, a rounded-square rod with a front-to-back head bar. It
+// prints LYING FLAT on the bed (mode "pin_print"): square section = flat bottom,
+// and the head only extends in Y so its bottom is level with the rod's.
+pin_y        = 12;             // front of the column, clear of the side windows
+pin_bore_d   = 5.0;            // square bore side (prints ~0.2 small)
+pin_d        = 4.4;            // rod side, 0.6 loose in the bore
+pin_corner_r = 0.6;
+pin_head_y   = 8;              // head length front-to-back (X width = pin_d)
+pin_head_h   = 1.6;
+pin_recess_y = 8.6;            // head pocket in the TOP face, straddling the seam
 pin_recess_h = pin_head_h + 0.1; // head sits 0.1 below flush; 3 - 1.7 = 1.3mm skin left
+pin_end_gap  = 0.4;            // rod stops this far above the column bottom
 // The head goes on top: gravity keeps the pin seated. (A bottom head would let it drop out.)
-pin_end_gap = 0.4;             // rod stops this far above the column bottom
 
 $fn = 48;
 
@@ -146,34 +149,45 @@ module slots() {
         along_y(depth + 1) for (z = dt_zs()) dovetail_profile(z, dt_clear);
 }
 
+module rrect2d(w, h, r = pin_corner_r) {
+    hull() for (sx = [-1, 1], sy = [-1, 1])
+        translate([sx * (w / 2 - r), sy * (h / 2 - r)]) circle(r = r, $fn = 24);
+}
+
 // Pin bore: full height, centred on the seam. Each column carries the half in
 // its +X face and the half in its -X face, so one bore per joint.
 module pin_bores() {
-    for (sx = [-1, 1])
-        translate([sx * column_pitch / 2, pin_y, -0.5])
-            cylinder(d = pin_bore_d, h = col_h + 1);
-    // head recess, top face only
-    for (sx = [-1, 1])
-        translate([sx * column_pitch / 2, pin_y, col_h - pin_recess_h])
-            cylinder(d = pin_recess_d, h = pin_recess_h + 0.5);
+    for (sx = [-1, 1]) translate([sx * column_pitch / 2, pin_y, 0]) {
+        translate([0, 0, -0.5]) linear_extrude(height = col_h + 1) rrect2d(pin_bore_d, pin_bore_d);
+        // head recess, top face only
+        translate([0, 0, col_h - pin_recess_h])
+            linear_extrude(height = pin_recess_h + 0.5) rrect2d(pin_bore_d, pin_recess_y);
+    }
 }
 
 // Rod length: from the recess floor down to pin_end_gap above the column bottom.
 function pin_len() = col_h - pin_recess_h - pin_end_gap;
 
-// The locking pin in PRINT orientation: head on the bed, rod pointing up.
+// The pin in its own frame: rod along +Z from z=0, head bar on top.
+module pin_local() {
+    L = pin_len();
+    translate([0, 0, 0.6]) linear_extrude(height = L - 0.6 + 0.01) rrect2d(pin_d, pin_d);
+    // lead-in taper on the tip
+    hull() {
+        linear_extrude(height = 0.01) rrect2d(pin_d - 1.2, pin_d - 1.2);
+        translate([0, 0, 0.6]) linear_extrude(height = 0.01) rrect2d(pin_d, pin_d);
+    }
+    translate([0, 0, L]) linear_extrude(height = pin_head_h) rrect2d(pin_d, pin_head_y);
+}
+
+// PRINT orientation: lying on a flat face of the rod, axis along X.
 module pin_print() {
-    cylinder(d = pin_head_d, h = pin_head_h);
-    translate([0, 0, pin_head_h - 0.01])
-        cylinder(d = pin_d, h = pin_len() + 0.01);
-    // small lead-in chamfer so the tip finds the bore
-    translate([0, 0, pin_head_h + pin_len() - 0.01])
-        cylinder(d1 = pin_d, d2 = pin_d - 1.2, h = 0.6);
+    translate([0, 0, pin_d / 2]) rotate([0, 90, 0]) pin_local();
 }
 
 // Pin installed in the seam between this column and its +X neighbour.
 module pin_installed() {
-    translate([column_pitch / 2, pin_y, col_h - pin_recess_h + pin_head_h]) mirror([0, 0, 1]) pin_print();
+    translate([column_pitch / 2, pin_y, col_h - pin_recess_h - pin_len()]) pin_local();
 }
 
 // Keyhole pocket cut into the BACK face (y = depth). Head enters the big
