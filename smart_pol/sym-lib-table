@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+
+  (lib (name "smart_pol") (type "KiCad") (uri "${KIPRJMOD}/smart_pol.kicad_sym") (options "") (descr "")))
